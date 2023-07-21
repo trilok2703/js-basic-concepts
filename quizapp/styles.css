@@ -50,7 +50,30 @@ body {
     transition: all 0.3s;
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
     color: #fff;
     background: #222;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    padding: 10px;
+    background: rgb(95, 95, 223);
+    border: 0;
+    color: #fff;
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
+    font-weight: 600;
+}
+
+.correct {
+    background: #9ad490;
+}
+
+.incorrect {
+    background: #ff9393;
 }
